@@ -48,8 +48,3 @@ The optimisation should optimise over following targets:
 In any case, the optimisation itself could also just be executed with a high tolerance on the solution: The solution space should be big enough for there not to be much of a problem to find a solution in the first place if there even is any (e.g. just greedily fill the time with the task that has the highest priority does that, so any branch and bound should succeed) and then just find a good one of these solutions without putting too much effort.
 
 Maybe the heuristic even does all the work that is actually needed: By assigning every task a rating (high if the ratio time still needed vs. time to deadline is high, low if the task before has same difficulty or is of same generator etc. ) and then just iterating and always just putting next the event with the hightest rating to however much time is alotted.
-
-
-choco install haskell-dev
-    refreshenv
-
